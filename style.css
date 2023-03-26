@@ -1,0 +1,323 @@
+/* Importação de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+/* Estilização global */
+body{
+    font-family: 'Inter';
+    margin: 0px;
+    padding: 20px 95px;
+    background-color: #000000;
+    color: #FFFFFF;
+    background-image: url("background.svg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    margin: 0px 70px;
+}
+
+p{
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+
+}
+
+
+/* Estilização Header */
+
+header{
+    margin: 22px 0px 102px 0px;
+}
+
+
+    /* Estilização Menu */
+    menu{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+    }
+
+        menu a{
+            text-decoration: none;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+            font-size: 25px;
+        }
+
+        #option1{
+            display: flex;
+            text-align: left;
+            width: 100%;
+        }
+
+            #option1 img{
+            margin-right: 80px;
+            }
+            
+        #menuImg{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #option2{
+            display: flex;
+            text-align: right;
+            width: 100%;
+        }
+
+            #option2 a{
+                margin-bottom: 0px;
+                margin-left: 70px;
+            }
+
+
+/* Estilização Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    main h1{
+        font-size: 57px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    main p{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    /* Estilização Form */
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 35%;
+        }
+
+            form input{
+                background: rgba(127, 127, 127, 0.75);
+                border-radius: 25px;
+                width: 100%;
+                height: 40px;
+                border: 0px;
+                padding-left: 20px;
+                font-size: 25px;
+                color: #FFFFFF;
+            }
+
+
+            form label{
+                text-align: left;
+                width: 100%;
+                font-size: 25px;
+                line-height: 40px;
+            }
+
+            form button{
+                background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+                border: 1px solid #000000;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 25px;
+                height: 48px;
+                color: #000000;
+                font-size: 25px;
+                border: 0px;
+                margin: 40px auto;
+                cursor: pointer;
+            }
+
+            #entrar{
+                width: 150px;
+            }
+
+            #provedor{
+                width: 350px;
+            }
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 480px){
+
+
+/* Estilização global */
+body{
+    width: 90%;
+    margin: 0px;
+    padding: 0px 5%;
+}
+
+
+/* Estilização Header */
+
+header{
+    margin-bottom: 21%;
+}
+
+    /* Estilização Menu */
+
+    menu{
+        width: 100%;
+    }
+
+        #menuImg{
+            width: 100%;
+        }
+
+            #menuImg img{
+                width: 80px;
+            }
+
+        #option1{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center space-around;
+        }
+                #option1 a{
+                    width: 40%;
+                    text-align: center;
+                    margin: 10% auto;
+                }
+
+                #option1 img{
+                    width: 50%;
+                    text-align: center;
+                    margin: 0px;
+                    height: 50%;
+                    padding: auto;
+                }
+
+        #option2{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around center;
+        }
+
+            #option2 a{
+                margin: 10% auto ;
+                font-size: 1rem;
+                width: 50%;
+                text-align: center;
+            }
+
+
+/* Estilização Main */
+
+main{
+    width: 100%;
+    margin: 0px;
+}
+
+    main h1{
+        font-size: 3rem;
+        margin-top: 0%;
+    }
+
+    main p{
+        font-size: 1.3rem;
+    }
+
+
+    /* Estilização Form */
+    form{
+        width: 95%;
+    }
+
+        form input{
+            width: 100%;
+            font-size: 1.3rem;
+        }
+
+        form label{
+            font-size: 1.3rem;
+        }
+
+        form button{
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        #provedor{
+            margin-top:0%;
+            width: 100%;
+        }
+
+}
+
+/* For mobile phones rotate: */
+@media (max-width: 1000px) and (orientation: landscape){
+
+/* Estilização global */
+
+body{
+margin: 0px;
+width: 90%;
+padding: 0% 5%;
+}
+
+
+/* Estilização Header */
+    menu{
+        width: 100%;
+    }
+
+
+    /* Estilização Menu */
+
+        #option1{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+        }
+
+            #option1 a{
+                width: 40%;
+                text-align: center;
+                margin: 10% auto;
+            }
+
+            #option1 img{
+                width: 35%;
+                text-align: center;
+                margin: 0px;
+                height: 50%;
+                padding: auto;
+            }
+
+        #option2{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around center;
+        }
+
+            #option2 a{
+                margin: 10% auto ;
+                font-size: 1.5rem;
+                width: 50%;
+                text-align: center;
+            }
+
+
+/* Estilização Main */
+    /* Estilização Form */
+
+        form{
+            width: 70%;
+        }
+}
